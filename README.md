@@ -7,6 +7,16 @@ Powered by [ZReviewTender](https://github.com/ZhgChgLi/ZReviewTender)
 
 ---
 
+## Pricing
+
+Github Action Proivde `2,000+ mins/month` for free.
+
+ZReviewTender will cost ~= `30s per time`, default run every `6 hours` will cost `4 times/day * 30s/per time * 30days` = `60 mins/month`
+
+I think it's almost FREE :)
+
+---
+
 ## Setup
 
 ### Step 1.
