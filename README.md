@@ -1,6 +1,6 @@
 # Deploy ZReviewTender(App Reviews Bot) with Github Action
 
-[![183288627-209506d5-1e77-4ab9-b9c2-029e291fc06c](https://user-images.githubusercontent.com/33706588/183292970-46e3dccf-0d32-4bb8-bc5c-5867035bf2d6.jpeg)](https://github.com/ZhgChgLi/ZReviewTender)
+[![ZReviewTender](https://user-images.githubusercontent.com/33706588/183300093-e4f2a671-fc3e-424b-bbf0-2cee7fa69914.jpg)](https://github.com/ZhgChgLi/ZReviewTender)
 
 
 Powered by [ZReviewTender](https://github.com/ZhgChgLi/ZReviewTender)
