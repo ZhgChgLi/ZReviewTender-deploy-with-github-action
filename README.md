@@ -64,6 +64,10 @@ upload the file you specify in apple/android.yml e.g. `AuthKey_XXX.p8`, `android
 
 ### Step 6. init ZReviewTender
 
+![image](https://user-images.githubusercontent.com/33706588/183436880-8c2d9435-9997-4741-a4de-0da75759d022.png)
+
+first,enable workflow.
+
 ![ZhgChgLi_2022-08-07_20-55-39](https://user-images.githubusercontent.com/33706588/183292458-838929e8-0449-4c1c-8c4f-513988a4b7b6.jpg)
 
 go to `Actions` -> `ZReviewTender` -> `Run workflow` -> `Run workflow`
