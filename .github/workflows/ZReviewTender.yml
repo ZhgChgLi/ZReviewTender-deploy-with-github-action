@@ -18,7 +18,7 @@ jobs:
         shell: bash
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update cache file."
+          commit_message: "Update latest check timestamp log file."
           commit_user_name: "ZReviewTender"
           commit_user_email: "zhgchgli@gmail.com"
           commit_author: ZReviewTender <zhgchgli@gmail.com>
