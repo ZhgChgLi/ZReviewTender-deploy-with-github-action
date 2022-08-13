@@ -1,4 +1,9 @@
 
+ZReviewTender init status: ![](../../actions/workflows/initZReviewTender.yml/badge.svg)
+
+ZReviewTender run status: ![](../../actions/workflows/ZReviewTender.yml/badge.svg)
+
+---
 # Deploy ZReviewTender(App Reviews Bot) with Github Action
 
 [![zreviewtender](https://user-images.githubusercontent.com/33706588/184472514-2b8fea8c-c79e-47d9-aa30-ad5376b5823f.jpeg)](https://github.com/ZhgChgLi/ZReviewTender)
@@ -42,9 +47,14 @@ IF NOT, please change repository visibility to private ASAP.
 Repo -> Settings -> General -> Danger Zone -> Change repository visibility -> Make private
 
 ### Step 4. wait for Project init success
+
+![](../../actions/workflows/initZReviewTender.yml/badge.svg)
+
+⬆️⬆️ wait for init step success.
+
 ![1_jThU3BbKvOT6nl51yklqtg](https://user-images.githubusercontent.com/33706588/184472836-db7f182a-204f-438d-9fcf-a245b8476920.png)
 
-Repo -> Actions -> Wait for Init ZReviewTender Workflow -> will get 3 ✅ Init ZReviewTender when execute finished -> Project init Success!
+or you can check in Repo -> Actions -> Wait for Init ZReviewTender Workflow -> will get 3 ✅ Init ZReviewTender when execute finished -> Project init Success!
 
 ### Step 5. make sure File & Folder has created by Project init step
 ![1_XEh53SaAjDV9YVk4T41O5Q](https://user-images.githubusercontent.com/33706588/184472920-41371c52-caca-436e-a2d2-fa4164ca30e9.png)
