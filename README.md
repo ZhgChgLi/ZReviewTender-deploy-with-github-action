@@ -76,13 +76,6 @@ click Commit changes after edited.
 
 upload releated key file in config/ folder.
 
-
-edit android & apple config yaml file, ref: [ZReviewTender - Configuration](https://github.com/ZhgChgLi/ZReviewTender#configuration)
-
-![ZhgChgLi_2022-08-07_20-51-25](https://user-images.githubusercontent.com/33706588/183292253-bb6446f5-d563-427a-9670-e6b32327feef.jpg)
-
-![ZhgChgLi_2022-08-07_20-52-49](https://user-images.githubusercontent.com/33706588/183292261-dda5531d-2026-4ec2-8cc2-3ade968e3a9f.jpg)
-
 ### Step 7. init ZReviewTender (manually)
 ![1_4QTEqr_DeFndqoWuP7YLsQ](https://user-images.githubusercontent.com/33706588/184473096-4558092d-cc47-426e-9bc0-db1144c204fe.png)
 
