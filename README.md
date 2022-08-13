@@ -1,7 +1,4 @@
-
-ZReviewTender init status: ![](../../actions/workflows/initZReviewTender.yml/badge.svg)
-
-ZReviewTender run status: ![](../../actions/workflows/ZReviewTender.yml/badge.svg)
+ZReviewTender last run status: ![](../../actions/workflows/ZReviewTender.yml/badge.svg)
 
 ---
 # Deploy ZReviewTender(App Reviews Bot) with Github Action
