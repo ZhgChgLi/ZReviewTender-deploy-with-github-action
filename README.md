@@ -39,7 +39,7 @@ go to /config after repo created.
 
 ![ZhgChgLi_2022-08-07_20-51-13](https://user-images.githubusercontent.com/33706588/183292226-baad75e3-6e41-48c0-9cce-915fef46e49e.jpg)
 
-edit android & apple config yaml file.
+edit android & apple config yaml file, ref: [ZReviewTender - Configuration](https://github.com/ZhgChgLi/ZReviewTender#configuration)
 
 ![ZhgChgLi_2022-08-07_20-51-25](https://user-images.githubusercontent.com/33706588/183292253-bb6446f5-d563-427a-9670-e6b32327feef.jpg)
 
