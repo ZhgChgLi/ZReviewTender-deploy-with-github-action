@@ -12,7 +12,7 @@ jobs:
           ruby-version: 2.6.5
       - run: gem install ZReviewTender
         shell: bash
-      - run: ZReviewTender init
+      - run: ZReviewTender -i
         shell: bash
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
