@@ -1,9 +1,11 @@
+
 # Deploy ZReviewTender(App Reviews Bot) with Github Action
 
-[![ZReviewTender](https://user-images.githubusercontent.com/33706588/183300093-e4f2a671-fc3e-424b-bbf0-2cee7fa69914.jpg)](https://github.com/ZhgChgLi/ZReviewTender)
-
+[![zreviewtender](https://user-images.githubusercontent.com/33706588/184472514-2b8fea8c-c79e-47d9-aa30-ad5376b5823f.jpeg)](https://github.com/ZhgChgLi/ZReviewTender)
 
 Powered by [ZReviewTender](https://github.com/ZhgChgLi/ZReviewTender)
+
+- [\[CH Readme\] ZReviewTender — 免費開源的 App Reviews 監控機器人 - **\[推薦\] 直接使用 Github Repo Template 部署** 區塊 ](https://medium.com/zrealm-ios-dev/zreviewtender-%E5%85%8D%E8%B2%BB%E9%96%8B%E6%BA%90%E7%9A%84-app-reviews-%E7%9B%A3%E6%8E%A7%E6%A9%9F%E5%99%A8%E4%BA%BA-e36e48bb9265)
 
 ---
 
@@ -13,31 +15,67 @@ Github Action Proivde `2,000+ mins/month` for free.
 
 ZReviewTender will cost ~= `30s per time`, default run every `6 hours` will cost `4 times/day * 30s/per time * 30days` = `60 mins/month`
 
-I think it's almost FREE :)
+I think it's total FREE :)
 
 ---
 
 ## Setup
 
-### Step 1.
-![ZhgChgLi_2022-08-07_20-47-56](https://user-images.githubusercontent.com/33706588/183291986-a7a563d1-f6d0-49df-9fd0-cf6313d33917.jpg)
+### Step 1. Go to [Use this template](https://github.com/ZhgChgLi/ZReviewTender-deploy-with-github-action/generate)
+![1_1pn3bxyBO0FoY4oIRvKCNg](https://user-images.githubusercontent.com/33706588/184472590-fc09b717-1184-477c-969d-af2e42606e16.png)
 
 Click [Use this template](https://github.com/ZhgChgLi/ZReviewTender-deploy-with-github-action/generate) on the right-top.
 
-### Step 2.
-![ZhgChgLi_2022-08-07_20-49-09](https://user-images.githubusercontent.com/33706588/183292060-e665c166-9389-44e7-85ba-94c8d4c3e684.jpg)
+### Step 2. Create Repo
+![1_YCBJJlSN4ZYjKMz7WBVIAQ](https://user-images.githubusercontent.com/33706588/184472671-2124e84e-c548-41ed-abf5-2525dd452c0d.png)
 
 - Repository name: type the name you like.
 - ⚠️⚠️⚠️ Repo Access: **MUST SET Private**, because you'll upload credentials file (config/private key..) to the repo.
 
-### Step 3.
-![ZhgChgLi_2022-08-07_20-50-51](https://user-images.githubusercontent.com/33706588/183292176-8ec9a3bf-5021-4077-a1f5-562649dac642.jpg)
+### Step 3. Make sure the repo you've created is Private.
+![1_1ZHF9CIOMV8S12Xw2P4B8g](https://user-images.githubusercontent.com/33706588/184472680-4f276b14-c4a6-4302-93a2-b6f9b6f45485.png)
 
-go to /config after repo created.
+make suer repo you've created have 🔒 icon and Private lable, means it's priave repo.
 
-### Step 4.
+IF NOT, please change repository visibility to private ASAP.
 
-![ZhgChgLi_2022-08-07_20-51-13](https://user-images.githubusercontent.com/33706588/183292226-baad75e3-6e41-48c0-9cce-915fef46e49e.jpg)
+Repo -> Settings -> General -> Danger Zone -> Change repository visibility -> Make private
+
+### Step 4. wait for Project init success
+![1_jThU3BbKvOT6nl51yklqtg](https://user-images.githubusercontent.com/33706588/184472836-db7f182a-204f-438d-9fcf-a245b8476920.png)
+
+Repo -> Actions -> Wait for Init ZReviewTender Workflow -> will get 3 ✅ Init ZReviewTender when execute finished -> Project init Success!
+
+### Step 5. make sure File & Folder has created by Project init step
+![1_XEh53SaAjDV9YVk4T41O5Q](https://user-images.githubusercontent.com/33706588/184472920-41371c52-caca-436e-a2d2-fa4164ca30e9.png)
+
+Repo -> Code:
+- config/
+- config/android.yml
+- config/apple.yml
+- latestCheckTimestamp/
+- latestCheckTimestamp/.keep
+
+make sure your repo has those file & folder above after project init step.
+
+### Step 6. ref [ZReviewTender - Configuration](https://github.com/ZhgChgLi/ZReviewTender#configuration) to fullfill config yml file
+- check out [ZReviewTender - Configuration](https://github.com/ZhgChgLi/ZReviewTender#configuration)
+
+![1_SiqBOk6BU38SRJAccC2hEg](https://user-images.githubusercontent.com/33706588/184472980-e1cffa36-3e43-41a9-b86c-462ca0072a0f.png)
+
+- go to config/ folder and full fill android.yml and apple.yml file.
+- click ✏️ icon to edit config yml file.
+
+![1_QZ0wQTtbcoN9tgyElYgYAw](https://user-images.githubusercontent.com/33706588/184473018-d375859d-c45d-4998-8972-07ddf384044b.png)
+
+click Commit changes after edited.
+
+![1_pAsWumPT57pLrY3Rn3UZhA](https://user-images.githubusercontent.com/33706588/184473030-12bc512a-d570-4ea7-b722-cd7a95a199ab.png)
+
+![1_CUVQlxKrJjsZZfy3jQErww](https://user-images.githubusercontent.com/33706588/184473059-bdd4190d-f85a-4aee-a97e-44e8039e1b1f.png)
+
+upload releated key file in config/ folder.
+
 
 edit android & apple config yaml file, ref: [ZReviewTender - Configuration](https://github.com/ZhgChgLi/ZReviewTender#configuration)
 
@@ -45,72 +83,60 @@ edit android & apple config yaml file, ref: [ZReviewTender - Configuration](http
 
 ![ZhgChgLi_2022-08-07_20-52-49](https://user-images.githubusercontent.com/33706588/183292261-dda5531d-2026-4ec2-8cc2-3ade968e3a9f.jpg)
 
-* rememver rename the file name to `apple.yml`
+### Step 7. init ZReviewTender (manually)
+![1_4QTEqr_DeFndqoWuP7YLsQ](https://user-images.githubusercontent.com/33706588/184473096-4558092d-cc47-426e-9bc0-db1144c204fe.png)
 
-![ZhgChgLi_2022-08-07_20-54-03](https://user-images.githubusercontent.com/33706588/183292265-8f6037bf-c3bc-4aa3-8a57-bb43fba0343f.jpg)
+Actions -> ZReviewTender -> Run workflow -> Run workflow
 
-same as apple.yml
+![1__zTIiPyGsAejyH1BpggzhQ](https://user-images.githubusercontent.com/33706588/184473129-7ddb2a96-1704-44fc-9c24-b4259cd34d01.png)
 
-* rememver rename the file name to `apple.yml`
+- refresh the web, will showing ZReviewTender is running.
+- click ZReviewTender go to check running log.
+- expend `Run ZreviewTender -r` section to check running log.
 
-### Step 5. upload dependency credentials
+![1_SAiaDofDwiFI8Z3ndDGz2w](https://user-images.githubusercontent.com/33706588/184473159-7be52587-ced8-4899-a436-8a05aa90ffbd.png)
+
+if success, no error, you will receive init success message in your slack channel you've specify in config yml.
+
+![1_W5PHoBzHQxV1WQ82TrZqfA](https://user-images.githubusercontent.com/33706588/184473241-caa39ed1-a9eb-4659-b053-c1112e7b872a.png)
+
+### Step 8. Done 🎉 🎉 🎉
+
+ZReviewTender will check latest reviews and resend to your slack channel every 6 hour by deafult.
+
+## Github Action Customize
+
+Actions -> ZReviewTender -> ZReviewTender.yml
+
+![1_DnquiwKTgYY6R2ysNx8F1w](https://user-images.githubusercontent.com/33706588/184473344-03e88bd2-e879-40f6-b04e-f013ab0c51f7.png)
+![1_onoSoGPahBOaAsBo6Ou-3g](https://user-images.githubusercontent.com/33706588/184473355-b9e5b3a0-cc3a-4baa-b9d9-698a544b5e90.png)
+
+click ✏️ icon to edit.
+
+![1_HY_f3zOivHGQv5tuwUyw8Q](https://user-images.githubusercontent.com/33706588/184473367-df2cd7db-81b3-44ec-819b-8389b1dc230b.png)
+
+### Edit execute time period
+
+![1_cUGMHPmjlMRV_rRXItN4qg](https://user-images.githubusercontent.com/33706588/184473409-64391df3-3c72-4376-a556-20ac4dd9ffe4.png)
+
+**cron**: execute time period, execute every 6 hour by default `15 */6 * * *`
+- you could ref [crontab.guru](https://crontab.guru/) to set time period you wants.
+- Github Action timezone is UTC.
+- high-frequency will cost more quota of Gihtub Action minutes.
+
+**run**: specify which ZReviewTender command you wnats, uses `ZReviewTedner -r` by default.
+- check both android and apple: `ZReviewTedner -r`
+- check only apple: `ZReviewTedner -a`
+- check only android: `ZReviewTedner -g`
+- more command: [ZReviewTender Usage](https://github.com/ZhgChgLi/ZReviewTender#usage)
 
 
-![ZhgChgLi_2022-08-07_20-54-24](https://user-images.githubusercontent.com/33706588/183292354-36865474-a4d7-4377-8040-a8ba6d5a11ba.jpg)
-
-![ZhgChgLi_2022-08-07_20-54-59](https://user-images.githubusercontent.com/33706588/183292364-e0c18816-8d7c-4572-b43f-4f265ddc25b1.jpg)
-
-upload the file you specify in apple/android.yml e.g. `AuthKey_XXX.p8`, `android_publisher_key.json`
-
-### Step 6. init ZReviewTender
-
-![image](https://user-images.githubusercontent.com/33706588/183436880-8c2d9435-9997-4741-a4de-0da75759d022.png)
-
-first,enable workflow.
-
-![ZhgChgLi_2022-08-07_20-55-39](https://user-images.githubusercontent.com/33706588/183292458-838929e8-0449-4c1c-8c4f-513988a4b7b6.jpg)
-
-go to `Actions` -> `ZReviewTender` -> `Run workflow` -> `Run workflow`
-
-![ZhgChgLi_2022-08-07_20-56-24](https://user-images.githubusercontent.com/33706588/183292496-f67de687-6da8-40ff-ad0a-f49f349b7188.jpg)
-
-back to slack channel, you'll receive an init success message in channel!
-
-### Done
-
-![ZhgChgLi_2022-08-07_21-02-30](https://user-images.githubusercontent.com/33706588/183292531-f7caa7bb-7337-4291-86bd-76c60a893c04.jpg)
-
-ZReviewTender will check the latest review every 6 hours, and resend review to slack channel automatically, like above :).
-
----
-
-## Q&A
-
-### Change the checker schedule
-
-![image](https://user-images.githubusercontent.com/33706588/183292653-a0de62a4-0cad-4684-92af-fb23b1b58c64.png)
-
-![image](https://user-images.githubusercontent.com/33706588/183292673-36b3c50a-d663-4823-9ff5-075dce25a052.png)
-
-![image](https://user-images.githubusercontent.com/33706588/183292704-285cb381-c4cc-4731-9707-9121a6fada60.png)
-
-you can change the crontab setting by modify `cron` parameter. [crontab](https://crontab.guru/)
-
-### Only check App Store or Google Play Review
-
-ZReviewTender will check bot App Store and Google Play review by default.
-
-![image](https://user-images.githubusercontent.com/33706588/183292851-724564e6-7ab3-4a59-a715-2dcfe3653444.png)
-
-you can modify command to:
-
-- Both (Default): `ZReviewTender`
-- Only Apple Store(iOS): `ZReviewTender -a`
-- Only Google Console(Android): `ZReviewTender -g`
+### Run manually
+check step 7.
 
 --
 
-## More Information/ Report an issue
+## More Setting/ Report an issue
 
 [ZReviewTender](https://github.com/ZhgChgLi/ZReviewTender)
 
