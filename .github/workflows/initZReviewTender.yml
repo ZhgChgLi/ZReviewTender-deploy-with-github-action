@@ -1,0 +1,22 @@
+name: Init ZReviewTender
+on:
+  create:
+
+jobs:
+  ZReviewTender:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.5
+      - run: gem install ZReviewTender
+        shell: bash
+      - run: ZReviewTender init
+        shell: bash
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "init file"
+          commit_user_name: "ZReviewTender"
+          commit_user_email: "zhgchgli@gmail.com"
+          commit_author: ZReviewTender <zhgchgli@gmail.com>
