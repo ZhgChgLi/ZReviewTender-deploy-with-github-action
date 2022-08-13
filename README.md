@@ -97,6 +97,9 @@ if success, no error, you will receive init success message in your slack channe
 
 ZReviewTender will check latest reviews and resend to your slack channel every 6 hour by deafult.
 
+![183830615-60f5ab30-0e61-4725-be6e-f917fb9589f8](https://user-images.githubusercontent.com/33706588/184503573-40fcce2a-390c-4426-b2b6-7b2a7537eb7a.jpeg)
+
+
 ## Github Action Customize
 
 Actions -> ZReviewTender -> ZReviewTender.yml
