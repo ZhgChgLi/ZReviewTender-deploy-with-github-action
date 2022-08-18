@@ -129,6 +129,7 @@ click ✏️ icon to edit.
 - you could ref [crontab.guru](https://crontab.guru/) to set time period you wants.
 - Github Action timezone is UTC.
 - high-frequency will cost more quota of Gihtub Action minutes.
+- please note that, google api only allow [retrieve the reviews that users have created or modified within the last week](https://developers.google.com/android-publisher/reply-to-reviews#retrieving_a_set_of_reviews), so could not set the time period more than one week.
 
 **run**: specify which ZReviewTender command you wnats, uses `ZReviewTedner -r` by default.
 - check both android and apple: `ZReviewTedner -r`
