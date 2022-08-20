@@ -1,24 +1,14 @@
-name: ZReviewTender
+name: ZMediumToMarkdown
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 */6 * * *" # check new review every 6 hour.
+    - cron: "15 */6 * * *" #check new review every 6 hour.
 
 jobs:
-  ZReviewTender:
+  ZMediumToMarkdown:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.6.5
-      - run: gem install ZReviewTender
-        shell: bash
-      - run: ZReviewTender -r
-        shell: bash
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Update latest check timestamp log file."
-          commit_user_name: "ZReviewTender"
-          commit_user_email: "zhgchgli@gmail.com"
-          commit_author: ZReviewTender <zhgchgli@gmail.com>
+    - name: ZMediumToMarkdown Automatic Bot
+      uses: ZhgChgLi/ZReviewTender@main
+      with:
+        command: '-r'
