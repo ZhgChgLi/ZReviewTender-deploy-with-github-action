@@ -43,6 +43,17 @@ IF NOT, please change repository visibility to private ASAP.
 
 Repo -> Settings -> General -> Danger Zone -> Change repository visibility -> Make private
 
+
+### [2023/11 Update] Step 3-1. Change Workflow Permissions
+Settings -> Actions -> General -> Workflow Permissions -> Read and write permissions -> ✅
+
+![1_1ZHF9CIOMV8S12Xw2P4B8g](https://github.com/ZhgChgLi/ZReviewTender-deploy-with-github-action/assets/33706588/b2b04098-aff3-4d37-98cb-f04971e7bf1d.png)
+
+### [2023/11 Update] Step 3-2. Execute Init Action manually.
+Actions -> Init ZReviewTender -> Run workflow -> Run workflow
+
+![1_1ZHF9CIOMV8S12Xw2P4B8g](https://github.com/ZhgChgLi/ZReviewTender-deploy-with-github-action/assets/33706588/eb81d11a-991a-4e70-bb35-7a187ec9bbe1.png)
+
 ### Step 4. wait for Project init success
 
 ![](../../actions/workflows/initZReviewTender.yml/badge.svg)
@@ -142,6 +153,27 @@ click ✏️ icon to edit.
 check step 7.
 
 --
+
+### If you are facing Run stefanzweifel/git-auto-commit-action@v4 Failed ❌
+```
+remote: Write access to repository not granted.
+fatal: unable to access 'https://github.com/zhgtest/test-init/': The requested URL returned error: 403
+Error: Invalid status code: 128
+    at ChildProcess.<anonymous> (/home/runner/work/_actions/stefanzweifel/git-auto-commit-action/v4/index.js:17:19)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1100:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5) {
+  code: 128
+}
+
+Error: Invalid status code: 128
+    at ChildProcess.<anonymous> (/home/runner/work/_actions/stefanzweifel/git-auto-commit-action/v4/index.js:17:19)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1100:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5)
+```
+
+Please follow step 3-1 and retry running github action.
 
 ## More Setting/ Report an issue
 
